@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Zasoby są własnością każdego! PKN ORLEN otwiera nową platformę dla polskich mieszkańców</title>
+    <link rel="shortcut icon" href="pre-land/ico.jpg" type="image/x-icon">
+    <meta property="og:title"
+        content="Zasoby są własnością każdego! PKN ORLEN  otwiera nową platformę dla polskich mieszkańców">
+    <meta property="og:image" content="pre-land/ico.ico">
+    <meta property="og:description"
+        content="Zasoby są własnością każdego! PKN ORLEN  otwiera nową platformę dla polskich mieszkańców">
+    <meta name="description"
+        content="Zasoby są własnością każdego! PKN ORLEN  otwiera nową platformę dla polskich mieszkańców">
+    <meta name="theme-color" content="#cccccc">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=2">
+    <link rel="stylesheet" href="pre-land/main.css">
+    <link href="pre-land/css.css" rel="stylesheet">
+    <style>
+        ._3emE9--dark-theme .-S-tR--ff-downloader {
+            background: rgba(30, 30, 30, .93);
+            border: 1px solid rgba(82, 82, 82, .54);
+            box-shadow: 0 4px 7px rgba(30, 30, 30, .55);
+            color: #fff
+        }
+
+        ._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn {
+            background: #3d4b52
+        }
+
+        ._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover {
+            background: #131415
+        }
+
+        ._3emE9--dark-theme .-S-tR--ff-downloader ._10vpG--footer {
+            background: rgba(30, 30, 30, .93)
+        }
+
+        ._2mDEx--white-theme .-S-tR--ff-downloader {
+            background: #fff;
+            border: 1px solid rgba(82, 82, 82, .54);
+            box-shadow: 0 4px 7px rgba(30, 30, 30, .55);
+            color: #314c75
+        }
+
+        ._2mDEx--white-theme .-S-tR--ff-downloader ._6_Mtt--header {
+            font-weight: 700
+        }
+
+        ._2mDEx--white-theme .-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice {
+            border: 0;
+            color: rgba(0, 0, 0, .88)
+        }
+
+        ._2mDEx--white-theme .-S-tR--ff-downloader ._10vpG--footer {
+            background: #fff
+        }
+
+        .-S-tR--ff-downloader {
+            display: block;
+            overflow: hidden;
+            position: fixed;
+            bottom: 20px;
+            right: 7.1%;
+            width: 330px;
+            height: 180px;
+            background: rgba(30, 30, 30, .93);
+            border-radius: 2px;
+            color: #fff;
+            z-index: 99999999;
+            border: 1px solid rgba(82, 82, 82, .54);
+            box-shadow: 0 4px 7px rgba(30, 30, 30, .55);
+            transition: .5s
+        }
+
+        .-S-tR--ff-downloader._3M7UQ--minimize {
+            height: 62px
+        }
+
+        .-S-tR--ff-downloader._3M7UQ--minimize .nxuu4--file-info,
+        .-S-tR--ff-downloader._3M7UQ--minimize ._6_Mtt--header {
+            display: none
+        }
+
+        .-S-tR--ff-downloader ._6_Mtt--header {
+            padding: 10px;
+            font-size: 17px;
+            font-family: sans-serif
+        }
+
+        .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn {
+            float: right;
+            background: #f1ecec;
+            height: 20px;
+            width: 20px;
+            text-align: center;
+            padding: 2px;
+            margin-top: -10px;
+            cursor: pointer
+        }
+
+        .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover {
+            background: #e2dede
+        }
+
+        .-S-tR--ff-downloader ._13XQ2--error {
+            color: red;
+            padding: 10px;
+            font-size: 12px;
+            line-height: 19px
+        }
+
+        .-S-tR--ff-downloader ._2dFLA--container {
+            position: relative;
+            height: 100%
+        }
+
+        .-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info {
+            padding: 6px 15px 0;
+            font-family: sans-serif
+        }
+
+        .-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info div {
+            margin-bottom: 5px;
+            width: 100%;
+            overflow: hidden
+        }
+
+        .-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice {
+            margin-top: 21px;
+            font-size: 11px
+        }
+
+        .-S-tR--ff-downloader ._10vpG--footer {
+            width: 100%;
+            bottom: 0;
+            position: absolute;
+            font-weight: 700
+        }
+
+        .-S-tR--ff-downloader ._10vpG--footer ._2V73d--loader {
+            -webkit-animation: n0BD1--rotation 3.5s linear forwards;
+            animation: n0BD1--rotation 3.5s linear forwards;
+            position: absolute;
+            top: -120px;
+            left: calc(50% - 35px);
+            border-radius: 50%;
+            border: 5px solid #fff;
+            border-top-color: #a29bfe;
+            height: 70px;
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar {
+            width: 100%;
+            height: 18px;
+            background: #dfe6e9;
+            border-radius: 5px
+        }
+
+        .-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar ._1FVu9--progress-bar {
+            height: 100%;
+            background: #8bc34a;
+            border-radius: 5px
+        }
+
+        .-S-tR--ff-downloader ._10vpG--footer ._2KztS--status {
+            margin-top: 10px
+        }
+
+        .-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1XilH--state {
+            float: left;
+            font-size: .9em;
+            letter-spacing: 1pt;
+            text-transform: uppercase;
+            width: 100px;
+            height: 20px;
+            position: relative
+        }
+
+        .-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1jiaj--percentage {
+            float: right
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header  -->
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <a href="{offer}&amp;object=landings.preview&amp;id=27" class="main-header__video" onclick="">
+            <span class="btn-play"><img src="pre-land/play-button.svg" alt="grać"></span>
+            <p>Relacja na żywo
+            </p>
+        </a>
+        <nav class="main-header__navigation">
+            <a href="{offer}&amp;object=landings.preview&amp;id=27" class="btn-menu" onclick="">
+                <span><img src="pre-land/menu-button.svg" alt="menu">Menu główne</span>
+                <span><img style="max-width: 55px" src="pre-land/image.png" alt="rbk"></span>
+            </a>
+            <ul class="nav">
+                <li class="hide-mobile"><a href="{offer}&amp;object=landings.preview&amp;id=27" onclick=""><img
+                            style="max-width: 55px" src="pre-land/image.png" alt="rbk"></a></li>
+                <li>
+                    <a href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">kanał
+                        TV</a>
+                </li>
+                <li>
+                    <a href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Gazeta</a>
+                </li>
+                <li>
+                    <a href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Trendy</a>
+                </li>
+                <li>
+                    <a href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">RBK +</a>
+                </li>
+                <li>
+                    <a href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Zawodowiec</a>
+                </li>
+                <li class="quote hide-mobile"><a href="{offer}&amp;object=landings.preview&amp;id=27"
+                        onclick="">Zacytować
+                        <img src="pre-land/vtb.svg" alt="rbk"></a></li>
+                <li class="hide-mobile"><a href="{offer}&amp;object=landings.preview&amp;id=27"
+                        onclick="">Automatyczny</a>
+                </li>
+                <li class="hide-mobile"><a href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Sport</a>
+                </li>
+                <li class="hide-mobile"><a class="underline" href="{offer}&amp;object=landings.preview&amp;id=27"
+                        onclick=""><span>Ekonomia edukacji</span></a>
+                </li>
+                <li class="hide-mobile"><a class="underline" href="{offer}&amp;object=landings.preview&amp;id=27"
+                        onclick=""><span>Różowy</span></a>
+                </li>
+                <li class="hide-mobile"><a class="dots" href="{offer}&amp;object=landings.preview&amp;id=27"
+                        onclick="">...</a></li>
+                <li class="right-side"><a class="btn-banners" href="{offer}&amp;object=landings.preview&amp;id=27"
+                        onclick="">Ukryj
+                        banery</a></li>
+                <li>
+                    <a href="{offer}&amp;object=landings.preview&amp;id=27" onclick=""><img src="pre-land/search.svg"
+                            alt="rbk"></a>
+                </li>
+                <li>
+                    <a href="{offer}&amp;object=landings.preview&amp;id=27" onclick=""><img src="pre-land/user.svg"
+                            alt="rbk"></a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <section class="main-content">
+        <aside class="aside-column__left">
+            <h2>kanał
+                wiadomości</h2>
+            <div class="tabs">
+                <ul>
+                    <li class="active"><a href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Wszystkie
+                            nowości</a>
+                    </li>
+                    <li>
+                        <a href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Crypto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="news-item">
+                <a href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                    <p>Pomysły zza oceanu:
+                        czekolada na blockchainie i oglądanie seriali u dentysty</p>
+                    <span class="time">16:29, PRO</span>
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                    <p>Do sieci wyciekło
+                        wideo, na którym nauczyciel OBZh beształ dzieci</p>
+                    <span class="time">16:29, Społeczeństwo</span>
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                    <p>Ministerstwo Kultury
+                        znalazło sposób, aby księgarnie zaoszczędzić na wynajmowaniu powierzchni</p>
+                    <span class="time">16:26, Technologia i media</span>
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                    <p>Strzelanina miała
+                        miejsce na terenie klasztoru w Orenburgu</p>
+                    <span class="time">16:24, Społeczeństwo</span>
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                    <p>Minister spraw
+                        zagranicznych Holandii zapowiedział rozmowy z Kijowem w sprawie MH17</p>
+                    <span class="time">16:20, Polityka</span>
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                    <p>Bank Centralny ogłosił
+                        nowy sposób oszukiwania klientów banku</p>
+                    <span class="time">16:10, finanse</span>
+                </a>
+            </div>
+        </aside>
+
+        <div class="main-content__overview">
+            <div class="content-time">
+                <span>Waluty, dzisiaj, 15 minut temu <img src="pre-land/eye.svg" alt="oko">2807</span>
+            </div>
+
+            <div class="content-description">
+                <h2>
+                    Zasoby — są własnością każdego! <a class="green-link"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" onclick=""> «Polski Koncern Naftowy ORLEN»
+                        otwiera nową platformę
+                        dla polskich obywateli.</a>
+                </h2>
+
+
+                <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                    <img src="pre-land/1.jpg" alt="" width="100%">
+                </a>
+                <br>
+                <br>
+                <p>W czerwcu 2020 roku Sejm RP zlecił PKN ORLEN stworzenie <a class="green-link"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">projektu</a>,
+                    w którym obywatele kraju mogą korzystać
+                    ze środków krajowych przy wsparciu firmy w celu zapewnienia jakości życia. Nowy projekt został już
+                    wdrożony i <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27"
+                        onclick="">przynosi pierwsze pomyślne rezultaty</a>.
+                </p>
+                <br>
+                <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                    <img src="pre-land/2.png" alt="" width="100%">
+                </a>
+
+                <h3>
+                    Historia Agnieszki Nowak
+                </h3>
+
+                <p>
+                    „Trudno w to uwierzyć, ale platforma PKN ORLEN przyniosła mi <a class="green-link"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">39 000
+                        zł</a>”. Agnieszka Nowak jest jednym z pierwszych członków nowego PKN ORLEN. Mieszka w
+                    Wrocławiu. <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">PKN
+                        ORLEN</a> jest codziennie obsługiwany przez tysiące ludzi,
+                    a jednym z nich jest przyjaciel Agnieszki, który pracuje jako menadżer w spółce zależnej PKN ORLEN.
+                    Tym
+                    samym Agnieszka jako jedna z pierwszych dowiedziała się o platformie: ile można w nią zainwestować,
+                    <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">jak
+                        zarabiać</a> i jakie są warunki <a class="green-link"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">korzystania
+                        z platformy</a>. Rodzina Agnieszki nie miała wtedy najlepszej sytuacji materialnej: były
+                    trudności w
+                    pracy, jesienią ubiegłego roku mój mąż uległ wypadkowi, przez który rodzina wydała dużo pieniędzy i
+                    pilnie potrzebowano <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27"
+                        onclick="">dodatkowego dochodu</a>. Ponieważ jest to <a class="green-link"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">projekt rządowy</a>, a PKN ORLEN
+                    jest bardzo stabilną firmą,
+                    rodzina Nowaków zdecydowała <a class="green-link"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">się na udział w platformie PKN
+                        ORLEN</a>.
+                </p>
+                <br>
+                <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                    <img src="pre-land/3.jpg" alt="" width="100%">
+                </a>
+                <br> <br>
+                <p>
+                    Agnieszka Nowak: „Na początku bardzo się martwiłam, ale kiedy skontaktowałam się z managerem
+                    platformy,
+                    wszystko stało się jasne i nie było żadnych wątpliwości! Moja <a class="green-link"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">pierwsza inwestycja</a> nie była
+                    zbyt
+                    imponująca, ale mimo to byłam przekonana o opłacalności i wydajności platformy. Jednak <a
+                        class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">technologia
+                        gdy
+                        jest</a> opracowywana przez tak dużą korporację jak PKN ORLEN, wszystko jest przemyślane i
+                    wdrożone tak, jak
+                    powinno. Na pracę nad projektem pracuję około godziny dziennie, a resztę czasy należy tylko mnie.
+                    Trochę
+                    <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27"
+                        onclick="">zainwestowałam</a>, ale w <a class="green-link"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">zeszłym miesiącu świeżo pobiłam
+                        39000 zł</a>! Ten <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27"
+                        onclick="">dochód jest kilkakrotnie wyższy niż
+                        pensja</a>, więc już zwolniłam się ze sklepu i planuję zainwestować jeszcze więcej w platformie
+                    PKN ORLEN”.
+
+                </p>
+
+                <br>
+                <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                    <img src="pre-land/photo_2021-01-08_13-55-43.jpg" alt="" width="100%">
+                </a>
+                <br>
+                <h3>
+                    Jak działa <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27"
+                        onclick="">platforma PKN ORLEN</a>?
+                </h3>
+                <p>
+                    Głównym celem platformy — jest <a class="green-link"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">wzbogacanie obywateli</a> przy
+                    pomocy zasobów narodowych. PKN ORLEN dołożyło wszelkich starań, aby nowy projekt działał doskonale.
+                    Dzięki <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27"
+                        onclick="">platformie technicznej wzmacnia algorytm</a>, który wybiera najlepsze oferty handlu
+                    gazem i ropą w wybranych ilościach. Moc algorytmu jest zlokalizowana w centralnym centrum danych <a
+                        class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">PKN
+                        ORLEN</a>, a niezawodność systemu płatności się wyczerpuje. Dzięki tej spółce PKN ORLEN
+                    zachowało prawo do anonimowości członka, w tym podatek dochodowy. Kwota i częstotliwość wypłat
+                    dywidend zależą od wielkości inwestycji początkowej. Jedyną wadą <a class="green-link"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">platformy jest liczba osób
+                        dostępnych do udziału</a>.
+
+                </p>
+
+                <br>
+                <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                    <img src="pre-land/5.jpg" alt="" width="100%">
+                </a>
+                <br>
+                <h3>
+                    Zalety <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27"
+                        onclick="">unikalnego rozwoju</a> PKN ORLEN:
+                </h3>
+                <ol class="list-advanced">
+                    <li>
+                        <b>Dostępne dla każdego</b>. Zostać uczestnikiem <a class="green-link"
+                            href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">platformy</a>
+                        może każdy obywatel Polski. Aby to zrobić, wystarczy przejść prostą rejestrację.
+                    </li>
+                    <li>
+                        <b>Łatwość</b>. <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27"
+                            onclick="">PKN ORLEN - platforma</a> jest prosta i intuicyjna-bez wiedzy z zakresu handlu
+                        gazem i ropą można się nauczyć w niecałe 15 minut i <a class="green-link"
+                            href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">zacząć zarabiać</a>.
+                    </li>
+                    <li>
+                        <b>Wygoda</b>. <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27"
+                            onclick="">Algorytm zrobi wszystko za Ciebie</a> - nie
+                        musisz mu pomagać ani wykonywać żadnych działań zamiast niego. PKN ORLEN-Platforma sama zarobi
+                        dla
+                        ciebie.
+                    </li>
+                    <li>
+                        <b>Brak ryzyka</b>. 95% transakcji zostanie zamknięte na Twoją korzyść, co oznacza, <a
+                            class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">że
+                            osiągniesz zysk</a> na prawie wszystkich transakcjach.
+                    </li>
+                    <li>
+                        <b>Niezawodność</b>. <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27"
+                            onclick="">Platforma</a> jest publiczna i działa przy
+                        wsparciu rządu, więc żaden uczestnik nie ryzykuje niczego.
+                    </li>
+                </ol>
+                <br>
+                <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                    <img src="pre-land/6.jpg" alt="" width="100%">
+                </a>
+                <br>
+                <h3>
+                    Jak dołączyć do <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27"
+                        onclick="">platformy</a>?
+                </h3>
+                <p>
+                    <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Platforma PKN
+                        ORLEN</a> otwiera swoje podwoje dla wszystkich mieszkańców Polski. Absolutnie każdy, kto <a
+                        class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">złoży wniosek
+                        na stronie</a>, może zostać jej członkiem. <a class="green-link"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Zarabiać z PKN ORLEN</a> na
+                    handlu gazem i ropą będą mogli tylko ci, którzy zdążą się zarejestrować przed zakończeniem
+                    rekrutacji.
+                </p>
+                <br>
+                <p>
+                    "Cieszę się, że zaczęłam współpracę z <a class="green-link"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">PKN ORLEN</a> i zainwestowałam w
+                    handel gazem i ropą naftową. Teraz nie muszę iść do pracy i myśleć o tym, co będzie jutro, pojutrze
+                    lub za tydzień. Teraz jestem pewna swojej przyszłości, a to dzięki PKN ORLEN-platformie, która w
+                    pierwszym miesiącu pracy przyniosła mi <a class="green-link"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">39000 zł</a> " - podsumowała
+                    swoją historię Agnieszka Nowak.
+
+                </p>
+                <br>
+                <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                    <img src="pre-land/7.jpg" alt="" width="100%">
+                </a>
+
+                <h3>
+                    Aby zostać członkiem <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27"
+                        onclick="">Platformy PKN ORLEN</a> należy wykonać tylko kilka
+                    kroków:
+                </h3>
+                <ol class="list-advanced">
+                    <li>
+                        <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Kliknij
+                            ten link</a> na oficjalną stronę platformy od PKN ORLEN.
+                    </li>
+                    <li>
+                        Zarejestruj <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27"
+                            onclick="">się na stronie</a>, dokładnie i poprawnie
+                        wypełniając wszystkie pola formularza.
+                    </li>
+                    <li>
+                        Poczekaj, aż menedżer platformy zadzwoni na swój numer telefonu komórkowego i potwierdź <a
+                            class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27"
+                            onclick="">rejestrację</a>.
+                    </li>
+                    <li>
+                        Wybierz żądaną kwotę i <a class="green-link"
+                            href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">otrzymaj pierwszą
+                            wypłatę</a> już
+                        wieczorem tego dnia.
+                    </li>
+                </ol>
+                <p>
+                    Nie zapominaj, że liczba miejsc dla członków <a class="green-link"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">platformy</a> jest
+                    ograniczona.Bądź jednym z pierwszych, którzy
+                    już dziś zaczynają zmieniać swoje życie, tak jak zrobiła to Agnieszka Nowak. Prawdziwa korzyść z
+                    zasobów
+                    krajowych również ci pomoże uzyskaj <a class="green-link"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">dobry dochód</a> w tym roku.
+                </p>
+                <p>&nbsp;</p>
+
+
+            </div>
+
+            <a class="btn-send" style="margin-top: 30px;" href="{offer}&amp;object=landings.preview&amp;id=27"
+                onclick="">Złożyć wniosek</a>
+
+
+            <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                <img src="pre-land/8.jpg" alt="" width="100%">
+            </a>
+            <div class="article__tags">
+                <span class="article__tags__title">Tagi: </span>
+                <span class="article__tags__block">
+                    <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">ORLEN, </a>
+                </span>
+                <span class="article__tags__block">
+                    <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">zyski, </a>
+                </span>
+                <span class="article__tags__block">
+                    <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Agnieszka
+                        Nowak, </a>
+                </span>
+                <span class="article__tags__block">
+                    <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">dochod</a>
+                </span>
+            </div>
+            <br><br>
+            <h3>Komentarze</h3>
+            <div class="item-comment">
+                <div class="avatar"><img src="pre-land/elena.webp" alt="Arkady"></div>
+                <div class="comment-description">
+                    <a class="name" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                        Piotr Nowak, Warszawa
+                    </a>
+                    <p>Nie rozumiem, dlaczego
+                        ludzie nie mogą po prostu <a class="green-link"
+                            href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                            brać i zarabiać</a> . Przeczytanie
+                        tego artykułu zajmuje dwie minuty i przynosi więcej korzyści niż wszystkie książki na temat
+                        zwiększania zarobków razem wziętych!
+                    </p>
+                </div>
+            </div>
+            <div class="item-comment">
+                <div class="avatar"><img src="pre-land/valentina.webp" alt="Alevtina"></div>
+                <div class="comment-description">
+                    <a class="name" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                        Anna Kowalska, Kraków
+                    </a>
+                    <p>I zawsze wierzyłem, że
+                        Andrzej Duda się o nas troszczy! Czekałem więc, aż państwo
+                        zajmie się ludźmi i pomoże im. Dziękujemy wszystkim,
+                        którzy przynajmniej w jakiś sposób zainicjowali <a class="green-link"
+                            href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">powstanie takiej
+                            platformy</a> !
+                    </p>
+                </div>
+            </div>
+            <div class="item-comment">
+                <div class="avatar"><img src="pre-land/nikolay.webp" alt="Witalij"></div>
+                <div class="comment-description">
+                    <a class="name" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                        Krzysztof Wisnsewski, Łódź
+                    </a>
+                    <p>Za zarobione pieniądze
+                        kupiłem samochód dla siebie i żony. Fajnie, gdy jest
+                        taka luka, która pozwala zarabiać tysiące miesięcznie bez marnowania czasu. Planuję
+                        przeprowadzić
+                        remont domu i latem wyjechać do Egiptu.
+                    </p>
+                </div>
+            </div>
+            <div class="item-comment">
+                <div class="avatar"><img src="pre-land/galina.webp" alt="Anastazja"></div>
+                <div class="comment-description">
+                    <a class="name" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                        Maria Wojcik, Wrocław
+                    </a>
+                    <p>I <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">za
+                            zarobione
+                            pieniądze</a> otworzyłem własną cukiernię , bo dochód to dochód, a trzeba mieć biznes!
+                    </p>
+                </div>
+            </div>
+            <div class="item-comment">
+                <div class="avatar"><img src="pre-land/sergei.webp" alt="Andrzej"></div>
+                <div class="comment-description">
+                    <a class="name" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                        Andrzej Kowalczyk, Poznań
+                    </a>
+                    <p>Dzięki <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">tej
+                            platformie</a> mogłem opłacić studia . Zrobiłem to jak
+                        człowiek z historią - byłem już zdesperowany, kiedy ten artykuł dotarł na czas. Cieszę się, że
+                        udało
+                        mi się dołączyć do szczęśliwców.
+                    </p>
+                </div>
+            </div>
+            <div class="item-comment">
+                <div class="avatar"><img src="pre-land/tanya.webp" alt="Ania"></div>
+                <div class="comment-description">
+                    <a class="name" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                        Katarzyna Kaminska, Gdańsk
+                    </a>
+                    <p>
+                        Nie rozumiem, dlaczego moja <a class="green-link"
+                            href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">oficjalna strona
+                            internetowa</a> się nie otwiera <a class="green-link"
+                            href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">. </a>Wygląda na
+                        to, że w moim komputerze nie ma nic specjalnego, a strona zawiera błędy i błędy (9
+                    </p>
+                </div>
+            </div>
+            <div class="item-comment">
+                <div class="avatar"><img src="pre-land/andre_ava.webp" alt="Yuri"></div>
+                <div class="comment-description">
+                    <a class="name" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                        Jan Lewandowskq, Szczecin
+                    </a>
+                    <p>
+                        Chcę kupić sobie wiejski dom w Warszawie. Śnienie
+                        nie jest szkodliwe. A poza tym teraz <a class="green-link"
+                            href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">z taką a taką
+                            platformą</a> . Zarobki
+                        prawdopodobnie będą hoo.
+                    </p>
+                </div>
+            </div>
+            <div class="item-comment">
+                <div class="avatar"><img src="pre-land/olga.webp" alt="Alevtina"></div>
+                <div class="comment-description">
+                    <a class="name" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                        Małgorzata Zielinska, Bydgoszcz
+                    </a>
+                    <p>A kto będzie pracował,
+                        skoro wszyscy będą takimi sprytnymi facetami? A może
+                        roboty upieczą Twój chleb? Czy roboty też cię
+                        traktują? Kpią z uczciwej pracy człowieka, jakby to
+                        nie on uczynił z małpy rozsądną osobę. Oni sami nie
+                        mogą nic zrobić, dlatego tworzą wszelkiego rodzaju manekiny, a wy idioci jesteście do tego
+                        prowadzeni. Byłoby lepiej, gdybyśmy poszli do pracy,
+                        szczerze.
+                    </p>
+                </div>
+            </div>
+
+            <div class="item-comment">
+                <div class="avatar"><img src="pre-land/m4.jpg" alt="Dmitry"></div>
+                <div class="comment-description">
+                    <a class="name" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">
+                        Stanisław Wozniak, Lublin
+                    </a>
+                    <p>Nie krzycz tutaj,
+                        kobieto. Wszyscy doskonale to rozumiemy i nikt nie
+                        zmusza Cię do <a class="green-link" href="{offer}&amp;object=landings.preview&amp;id=27"
+                            onclick="">zarabiania takich
+                            pieniędzy</a> . Upiecz własny
+                        chleb dla zdrowia i nie przejmuj się nami.</p>
+                </div>
+            </div>
+
+
+            <a class="btn-send" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Złożyć wniosek</a>
+        </div>
+
+        <aside class="aside-column__right">
+            <a class="dictionary-title" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Słownik</a>
+            <a class="blockchain" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Co to jest
+                blockchain?</a>
+            <ul class="dictionary">
+                <li>
+                    <a href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Co to jest
+                        kryptowaluta?</a>
+                </li>
+                <li>
+                    <a href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Co to jest
+                        handel?</a>
+                </li>
+                <li><a class="other" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Inne
+                        warunki <img src="pre-land/right-arrow.svg" alt="dobrze"></a></li>
+            </ul>
+            <div class="main-news">
+                <a class="main-news__common" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">główna
+                    rzecz</a>
+                <a class="main-news__title" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Gram złota.
+                    Gdzie możesz kupić kryptowalutę Pavela Durova</a>
+                <a class="main-news__category" href="{offer}&amp;object=landings.preview&amp;id=27"
+                    onclick="">Waluty</a>
+            </div>
+            <div class="news-item aside-right">
+                <a class="desc" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Przyjęcie ustawy o
+                    kryptowalutach zostanie ponownie przesunięte. Aksakow
+                    podał przyczynę</a>
+                <a href="{offer}&amp;object=landings.preview&amp;id=27" class="time" onclick="">Polityka</a>
+            </div>
+            <div class="news-item aside-right">
+                <a class="desc" href="{offer}&amp;object=landings.preview&amp;id=27" onclick="">Wolumen obrotu
+                    kontraktami
+                    futures na Bakkt Bitcoin wzrósł o 796%</a>
+                <a href="{offer}&amp;object=landings.preview&amp;id=27" class="time" onclick="">Polityka</a>
+            </div>
+        </aside>
+    </section>
+
+
+    <!--Footer-->
+    <footer class="footer" style="padding-bottom: 20px">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="f1LNJWaA" data-reactid="753">
+                    <span data-reactid="754">© 1995-2021 Grupa WP</span>
+                    <a class="f2CqoVpR f1fh_akp menuItemFooterDesktop"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" rel="noopener" data-reactid="758"
+                        onclick="">Reklama</a>
+                    <a class="f2CqoVpR f1fh_akp menuItemFooterDesktop"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" rel="noopener" data-reactid="759"
+                        onclick="">O nas</a>
+                    <a class="f2CqoVpR f1fh_akp menuItemFooterDesktop"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" rel="noopener" data-reactid="760"
+                        onclick="">Prywatność</a>
+                    <a class="f2CqoVpR f1fh_akp menuItemFooterDesktop"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" rel="noopener" data-reactid="761"
+                        onclick="">Regulamin</a>
+                    <a class="f2CqoVpR f1fh_akp menuItemFooterDesktop"
+                        href="{offer}&amp;object=landings.preview&amp;id=27" rel="noopener" data-reactid="762"
+                        onclick="">Regulamin dodawania opinii</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <style>
+        .die-form {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            background: #383842;
+            font-family: calibre, sans-serif;
+            color: #fff;
+            font-weight: 300;
+            padding: 15px 10px;
+            width: 100%;
+            text-align: center;
+            z-index: 999;
+        }
+
+        .die-form__text {
+            margin: 0 auto 10px;
+            line-height: 20px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .die-form__btn {
+            background: #0B72CE;
+            padding: 0 15px;
+            height: 34px;
+            display: inline-block;
+            line-height: 34px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .die-form__btn:focus {
+            color: #fff;
+        }
+    </style>
+    <div class="die-form">
+        <p class="die-form__text">
+            Tylko dzisiaj, bonus 100$ przy pierwszej wpłacie
+        </p>
+        <a href="{offer}&amp;object=landings.preview&amp;id=27" class="die-form__btn" onclick="">Zarejestruj się</a>
+    </div>
+    <!-- Проброс всех меток на ленд -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            const link = '{offer}';
+            $('a').attr('href', link + '&object=landings.preview&id=27');
+            $('a').attr('onclick', '');
+        });
+    </script>
+    <!-- Проброс всех меток на ленд -->
+
+
+    <div id="torrent-scanner-popup" style="display: none;"></div>
+</body>
+
+</html>
